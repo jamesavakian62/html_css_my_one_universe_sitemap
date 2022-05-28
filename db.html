@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      div {
+        text-align: center;
+      }
+
+      body {
+        font-family: Arial;
+        background-color: #f2eac9;
+      }
+
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: rgb(0, 0, 0);
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #0f0606;
+        color: rgb(250, 240, 240);
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: rgb(119, 88, 231);
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        padding: 6px 12px;
+        border: 1px solid rgb(217, 202, 202);
+        border-top: none;
+        width: 850px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: left;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      div.scrollmenu {
+        background-color: rgb(6, 5, 3);
+        overflow: auto;
+        white-space: nowrap;
+        color: white;
+      }
+
+      div.scrollmenu a {
+        display: inline-block;
+        color: rgb(241, 238, 245);
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        width: 850px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      div.scrollmenu a:hover {
+        background-color: rgb(235, 224, 78);
+      }
+      tablinks {
+        background-color: #010101;
+        color: black;
+      }
+
+      ul {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Complete Network</h1>
+    <h1>My One Universe Site Map Sections</h1>
+    <ul>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Americana')">
+          Americana
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'ShopperLady')">
+          ShopperLady
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'PersonalOrg')">
+          PersonalOrg
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'BusinessOrg')">
+          BusinessOrg
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Technology')">
+          Technology
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Admin')">
+          Admin
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Dashboard')">
+          Dashboard
+        </button>
+      </div>
+    </ul>
+
+    <div id="Americana" class="tabcontent">
+      <h3>Americana</h3>
+      <p>Americana is the capital city of England.</p>
+      <br />
+      <h1>Americana Applications</h1>
+      <div class="scrollmenu">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#blog">Blog</a>
+        <a href="#tools">Tools</a>
+        <a href="#base">Base</a>
+        <a href="#custom">Custom</a>
+        <a href="#more">More</a>
+        <a href="#logo">Logo</a>
+        <a href="#friends">Friends</a>
+        <a href="#partners">Partners</a>
+        <a href="#people">People</a>
+        <a href="#work">Work</a>
+      </div>
+    </div>
+
+    <div id="ShopperLady" class="tabcontent">
+      <h3>ShopperLady</h3>
+      <p>ShopperLady is the capital city of England.</p>
+      <br />
+      <h1>ShopperLady Applications</h1>
+      <div class="scrollmenu">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#blog">Blog</a>
+        <a href="#tools">Tools</a>
+        <a href="#base">Base</a>
+        <a href="#custom">Custom</a>
+        <a href="#more">More</a>
+        <a href="#logo">Logo</a>
+        <a href="#friends">Friends</a>
+        <a href="#partners">Partners</a>
+        <a href="#people">People</a>
+        <a href="#work">Work</a>
+      </div>
+    </div>
+
+    <div id="PersonalOrg" class="tabcontent">
+      <h3>PersonalOrg</h3>
+      <p>PersonalOrg is the capital city of England.</p>
+      <br />
+      <h1>PersonalOrg Applications</h1>
+      <div class="scrollmenu">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#blog">Blog</a>
+        <a href="#tools">Tools</a>
+        <a href="#base">Base</a>
+        <a href="#custom">Custom</a>
+        <a href="#more">More</a>
+        <a href="#logo">Logo</a>
+        <a href="#friends">Friends</a>
+        <a href="#partners">Partners</a>
+        <a href="#people">People</a>
+        <a href="#work">Work</a>
+      </div>
+    </div>
+
+    <div id="BusinessOrg" class="tabcontent">
+      <h3>BusinessOrg</h3>
+      <p>BusinessOrg is the capital city of England.</p>
+      <br />
+      <h1>BusinessOrg Applications</h1>
+      <div class="scrollmenu">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#blog">Blog</a>
+        <a href="#tools">Tools</a>
+        <a href="#base">Base</a>
+        <a href="#custom">Custom</a>
+        <a href="#more">More</a>
+        <a href="#logo">Logo</a>
+        <a href="#friends">Friends</a>
+        <a href="#partners">Partners</a>
+        <a href="#people">People</a>
+        <a href="#work">Work</a>
+      </div>
+    </div>
+
+    <div id="Technology" class="tabcontent">
+      <h3>Technology</h3>
+      <p>Technology is the capital city of England.</p>
+      <br />
+      <h1>Network Applications ggg</h1>
+      <div class="scrollmenu">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#blog">Blog</a>
+        <a href="#tools">Tools</a>
+        <a href="#base">Base</a>
+        <a href="#custom">Custom</a>
+        <a href="#more">More</a>
+        <a href="#logo">Logo</a>
+        <a href="#friends">Friends</a>
+        <a href="#partners">Partners</a>
+        <a href="#people">People</a>
+        <a href="#work">Work</a>
+      </div>
+    </div>
+
+    <div id="Admin" class="tabcontent">
+      <h3>Admin</h3>
+      <p>Admin is the capital city of England.</p>
+      <br />
+      <h1>Admin Applications</h1>
+      <div class="scrollmenu">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#blog">Blog</a>
+        <a href="#tools">Tools</a>
+        <a href="#base">Base</a>
+        <a href="#custom">Custom</a>
+        <a href="#more">More</a>
+        <a href="#logo">Logo</a>
+        <a href="#friends">Friends</a>
+        <a href="#partners">Partners</a>
+        <a href="#people">People</a>
+        <a href="#work">Work</a>
+      </div>
+    </div>
+    <div id="Dashboard" class="tabcontent">
+      <h3>Dashboard</h3>
+      <p>Dashboard is the capital city of England.</p>
+      <br />
+      <h1>Dashboard Applications</h1>
+      <div class="scrollmenu">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#blog">Blog</a>
+        <a href="#tools">Tools</a>
+        <a href="#base">Base</a>
+        <a href="#custom">Custom</a>
+        <a href="#more">More</a>
+        <a href="#logo">Logo</a>
+        <a href="#friends">Friends</a>
+        <a href="#partners">Partners</a>
+        <a href="#people">People</a>
+        <a href="#work">Work</a>
+      </div>
+    </div>
+    <br />
+    <h1>Network Motif</h1>
+    <div class="scrollmenu">
+      <a href="#home">My One Universe</a>
+      <a href="#news">DetailBase</a>
+      <a href="#contact">My Digital Pocket Knife</a>
+    </div>
+
+    <div id="Americana" class="tabcontent">
+      <h3>Americana</h3>
+      <p>Americana is the capital city of England.</p>
+
+      <p>Service, Goals, and Purpose</p>
+
+      <p>Description</p>
+
+      <p>Section Applications</p>
+      <div id="PersonalOrg" class="tabcontent">
+        <h3>PersonalOrg</h3>
+        <p>PersonalOrg is the capital of Japan.</p>
+        <p>
+          ShopperLady is the capital of France. ShopperLady is the capital of
+          France. ShopperLady is the capital of France. ShopperLady is the
+          capital of France. ShopperLady is the capital of France. ShopperLady
+          is the capital of France. ShopperLady is the capital of France.
+          ShopperLady is the capital of France. ShopperLady is the capital of
+          France. ShopperLady is the capital of France.
+        </p>
+        <br />
+        <h1>Network Applications</h1>
+        <div class="scrollmenu">
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="#support">Support</a>
+          <a href="#blog">Blog</a>
+          <a href="#tools">Tools</a>
+          <a href="#base">Base</a>
+          <a href="#custom">Custom</a>
+          <a href="#more">More</a>
+          <a href="#logo">Logo</a>
+          <a href="#friends">Friends</a>
+          <a href="#partners">Partners</a>
+          <a href="#people">People</a>
+          <a href="#work">Work</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body>
+</html>
